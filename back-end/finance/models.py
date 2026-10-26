@@ -1,10 +1,11 @@
 from django.conf import settings
 from django.db import models
 
-class Category(models.Model):
-    type_choices = (("income", "Income"), ("expence", "Expence"))
 
-    name =  models.CharField(max_length=50)
+class Category(models.Model):
+    type_choices = (("income", "Income"), ("expense", "Expense"))
+
+    name = models.CharField(max_length=50)
     type = models.CharField(max_length=10, choices=type_choices)
     color = models.CharField(max_length=7)
     icon = models.CharField(max_length=50)
@@ -12,6 +13,7 @@ class Category(models.Model):
 
     def __str__(self):
         return str(self.name)
+
 
 class Transaction(models.Model):
     amount = models.DecimalField(max_digits=12, decimal_places=2)
