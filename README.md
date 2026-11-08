@@ -14,21 +14,15 @@ Bartek Gorczyca
 
 Below is a list of the planned application features.
 
-| Feature Name             | What the user does                     | View                  | Data      | Most challenging                              | Done when                                        |
-| :----------------------- | :------------------------------------- | :-------------------- | :-------- | :-------------------------------------------- | :----------------------------------------------- |
-| **Registration & Login** | Creates an account, logs in, logs out. | Login/Register screen | API (JWT) | Correct handling of tokens in the API client. | User sees their Dashboard only after logging in. |
-
-| **Custom Categories** | Adds, edits, and deletes categories (name, type, color, icon). | `/categories` | API | Selecting color and icon from ready-made libraries | A new category appears in the list and can be used in a transaction. |
-
-| **Add/Edit Transaction** | Fills out a form (amount, date, category, description) with validation. | Modal on `/transactions` | API | Form validation before submitting. | The form blocks invalid data (e.g., negative amount), and a valid transaction is saved to the DB. |
-
-| **Transaction List with Filters** | Browses history, filters by month, category, and type. | `/transactions` | API | Synchronizing UI filters with backend queries. | Changing the filter immediately updates the list visible on the screen. |
-
-| **Monthly Budget** | Sets a spending limit for a category. Sees a progress bar. | `/budgets` | API | Visual alert (red bar) when the limit is exceeded. | User sees on the Dashboard that they spent e.g., 80% of their food budget. |
-
-| **Monthly Dashboard** | Views total income, expenses, and current balance. | `/` (main) | API | Fetching and summing data in a single request (aggregation). | Cards on the main page show current data for the current month. |
-
-| **Charts** | Analyzes expenses by category and monthly trend. | `/` (main) | API | Correctly mapping data from the API to the structure required by Recharts. | Charts render correctly and react to data changes. |
+| Feature Name                      | What the user does                                                      | View                     | Data      | Most challenging                                                           | Done when                                                                                         |
+| :-------------------------------- | :---------------------------------------------------------------------- | :----------------------- | :-------- | :------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ |
+| **Registration & Login**          | Creates an account, logs in, logs out.                                  | Login/Register screen    | API (JWT) | Correct handling of tokens in the API client.                              | User sees their Dashboard only after logging in.                                                  |
+| **Custom Categories**             | Adds, edits, and deletes categories (name, type, color, icon).          | `/categories`            | API       | Selecting color and icon from ready-made libraries                         | A new category appears in the list and can be used in a transaction.                              |
+| **Add/Edit Transaction**          | Fills out a form (amount, date, category, description) with validation. | Modal on `/transactions` | API       | Form validation before submitting.                                         | The form blocks invalid data (e.g., negative amount), and a valid transaction is saved to the DB. |
+| **Transaction List with Filters** | Browses history, filters by month, category, and type.                  | `/transactions`          | API       | Synchronizing UI filters with backend queries.                             | Changing the filter immediately updates the list visible on the screen.                           |
+| **Monthly Budget**                | Sets a spending limit for a category. Sees a progress bar.              | `/budgets`               | API       | Visual alert (red bar) when the limit is exceeded.                         | User sees on the Dashboard that they spent e.g., 80% of their food budget.                        |
+| **Monthly Dashboard**             | Views total income, expenses, and current balance.                      | `/` (main)               | API       | Fetching and summing data in a single request (aggregation).               | Cards on the main page show current data for the current month.                                   |
+| **Charts**                        | Analyzes expenses by category and monthly trend.                        | `/` (main)               | API       | Correctly mapping data from the API to the structure required by Recharts. | Charts render correctly and react to data changes.                                                |
 
 ## Stack
 
