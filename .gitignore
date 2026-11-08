@@ -1,2 +1,5 @@
-funkcje_do_dodania.txt
-
+back-end/venv/backend/
+__pycache__/
+.env
+*.log
+*.sqlite3
